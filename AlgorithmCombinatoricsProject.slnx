@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="AlgorithmCombinatoricsProject/AlgorithmCombinatoricsProject.vcxproj" />
+  <Project Path="AlgorithmCombinatoricsProject/AlgorithmCombinatoricsProject.vcxproj" Id="a9d6dd11-a595-4755-96f1-ae83abab6848" />
 </Solution>

@@ -1,11 +1,26 @@
+#include <iostream>
 #include <vector>
 #include <algorithm>
 
-void permutationsPrint(std::vector<char> array);
-std::vector<std::vector<char>> permutations(std::vector<char> array);
+typedef std::vector<char> TElements;
+typedef std::vector<std::vector<char>> TResult;
 
-void placementPrint(std::vector<char> array, int count);
-std::vector<std::vector<char>> placement(std::vector<char> array, int count);
+void resultPrint(TResult result);
 
-void combinationsPrint(std::vector<char> array, int count);
-std::vector<std::vector<char>> combinations(std::vector<char> array, int count);
+// перестановки
+TResult permutations(TElements array);
+void permute(TElements& array, int start, TResult& result);
+
+bool nextPermutation(TElements& array);
+
+// размещения
+TResult placements(TElements array, int count);
+void place(TElements& array,
+    int placementSize,
+    TElements& currentPlacement,
+    std::vector<bool>& used,
+    TResult& result);
+
+
+// сочетания
+TResult combinations(TElements array, int count);
